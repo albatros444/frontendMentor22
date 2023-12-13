@@ -107,16 +107,20 @@ a {
   text-align: center;
 }
 .thanksBox svg {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .thanksBox h2 {
   margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  color: hsl(278, 68%, 11%);
 }
 .thanksBox p {
   margin-bottom: 50px;
   color: hsl(264, 2%, 51%);
+  font-weight: 500;
 }
 .thanksBox button {
   width: 381px;
