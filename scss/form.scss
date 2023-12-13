@@ -1,0 +1,61 @@
+.formBox {
+  form {
+    width: 380px;
+    height: 355px;
+    .inputField {
+      margin-bottom: 26px;
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .boxForBorder {
+        padding: 1px;
+        border-radius: 8px;
+        background: hsl(270, 3%, 87%);
+
+        &:focus-within {
+          background: linear-gradient(
+            to right,
+            hsl(249, 99%, 64%),
+            hsl(278, 94%, 30%)
+          );
+        }
+        input {
+          display: block;
+          height: 43px;
+          width: 100%;
+          border: none;
+          border-radius: 7px;
+          padding-left: 15px;
+          font-size: 18px;
+          font-weight: 500;
+          cursor: pointer;
+          color: hsl(278, 68%, 11%);
+          &::placeholder {
+            color: hsl(270, 3%, 80%);
+          }
+          // &:focus {
+          // }
+        }
+      }
+    }
+    .inpFieldsBox {
+      display: flex;
+      margin-bottom: 14px;
+      .MMYYBox {
+        display: flex;
+        margin-right: 10px;
+        .boxForBorder {
+          margin-right: 10px;
+          input {
+            width: 79px;
+          }
+        }
+      }
+    }
+  }
+}

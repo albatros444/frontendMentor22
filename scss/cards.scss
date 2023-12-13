@@ -1,0 +1,56 @@
+.cardsBox {
+  //   display: none;
+  position: relative;
+  width: 541px;
+  height: 532px;
+
+  color: white;
+  &__card1 {
+    position: absolute;
+    .card1Image {
+      border-radius: 10px;
+      // box-shadow: 10px 10px 20px hsl(270, 3%, 87%);
+    }
+    .card1data {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 447px;
+      height: 241px;
+      padding: 28px 32px;
+
+      img {
+        margin-bottom: 59px;
+      }
+      .cardNumber {
+        font-size: 27px;
+        font-weight: 400;
+        letter-spacing: 0.16em;
+        span {
+          margin-right: 10px;
+        }
+      }
+      .box {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 14px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  &__card2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    .card2data {
+      position: absolute;
+      bottom: 107px;
+      right: 58px;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+}

@@ -49,4 +49,172 @@ a {
   color: hsl(228, 45%, 44%);
 }
 
+.cardsBox {
+  position: relative;
+  width: 541px;
+  height: 532px;
+  color: white;
+}
+.cardsBox__card1 {
+  position: absolute;
+}
+.cardsBox__card1 .card1Image {
+  border-radius: 10px;
+}
+.cardsBox__card1 .card1data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 447px;
+  height: 241px;
+  padding: 28px 32px;
+}
+.cardsBox__card1 .card1data img {
+  margin-bottom: 59px;
+}
+.cardsBox__card1 .card1data .cardNumber {
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+}
+.cardsBox__card1 .card1data .cardNumber span {
+  margin-right: 10px;
+}
+.cardsBox__card1 .card1data .box {
+  display: flex;
+  justify-content: space-between;
+}
+.cardsBox__card1 .card1data .box p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.cardsBox__card2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.cardsBox__card2 .card2data {
+  position: absolute;
+  bottom: 107px;
+  right: 58px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.thanksBox {
+  display: none;
+  text-align: center;
+}
+.thanksBox svg {
+  margin-bottom: 25px;
+}
+.thanksBox h2 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.thanksBox p {
+  margin-bottom: 50px;
+  color: hsl(264, 2%, 51%);
+}
+.thanksBox button {
+  width: 381px;
+}
+
+.formBox form {
+  width: 380px;
+  height: 355px;
+}
+.formBox form .inputField {
+  margin-bottom: 26px;
+}
+.formBox form .inputField label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.formBox form .inputField .boxForBorder {
+  padding: 1px;
+  border-radius: 8px;
+  background: hsl(270, 3%, 87%);
+}
+.formBox form .inputField .boxForBorder:focus-within {
+  background: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
+.formBox form .inputField .boxForBorder input {
+  display: block;
+  height: 43px;
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: hsl(278, 68%, 11%);
+}
+.formBox form .inputField .boxForBorder input::placeholder {
+  color: hsl(270, 3%, 80%);
+}
+.formBox form .inpFieldsBox {
+  display: flex;
+  margin-bottom: 14px;
+}
+.formBox form .inpFieldsBox .MMYYBox {
+  display: flex;
+  margin-right: 10px;
+}
+.formBox form .inpFieldsBox .MMYYBox .boxForBorder {
+  margin-right: 10px;
+}
+.formBox form .inpFieldsBox .MMYYBox .boxForBorder input {
+  width: 79px;
+}
+
+button {
+  display: inline-block;
+  height: 53px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 7px;
+  outline: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(278, 68%, 11%);
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: no-repeat url("/images/bg-main-desktop.png");
+  background-size: contain;
+}
+.background .cardsInputBox {
+  width: 1050px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.errorMessage {
+  display: none;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(0, 100%, 66%);
+}
+
 /*# sourceMappingURL=main.css.map */

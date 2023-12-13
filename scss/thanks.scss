@@ -1,0 +1,19 @@
+.thanksBox {
+  display: none;
+  text-align: center;
+  svg {
+    margin-bottom: 25px;
+  }
+  h2 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  p {
+    margin-bottom: 50px;
+    color: hsl(264, 2%, 51%);
+  }
+  button {
+    width: 381px;
+  }
+}

@@ -1,2 +1,31 @@
 @import "globals";
 @import "footer";
+@import "cards";
+@import "thanks";
+@import "form";
+@import "button";
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: no-repeat url("/images/bg-main-desktop.png");
+  background-size: contain;
+
+  .cardsInputBox {
+    width: 1050px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.errorMessage {
+  display: none;
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(0, 100%, 66%);
+}
