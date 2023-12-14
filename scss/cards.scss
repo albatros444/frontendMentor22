@@ -3,13 +3,10 @@
   position: relative;
   width: 541px;
   height: 532px;
-
   color: white;
   &__card1 {
     position: absolute;
     .card1Image {
-      border-radius: 10px;
-      // box-shadow: 10px 10px 20px hsl(270, 3%, 87%);
     }
     .card1data {
       position: absolute;

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/main.css" />
@@ -20,139 +20,145 @@
     <title>Frontend Mentor | Interactive card details form</title>
   </head>
   <body>
-    <div class="background">
-      <div class="cardsInputBox">
-        <div class="cardsBox">
-          <!-- card 1 -->
-          <div class="cardsBox__card1">
-            <img
-              class="card1Image"
-              src="/images/bg-card-front.png"
-              alt="frontCard"
-            />
-            <div class="card1data">
-              <img src="/images/card-logo.svg" alt="" />
-              <p class="cardNumber">
-                <span>0000</span><span>0000</span><span>0000</span
-                ><span>0000</span>
-              </p>
-              <div class="box">
-                <p class="name">Jane Appleseed</p>
-                <p class="expDate">
-                  <span class="expM">00</span>/<span class="expY">00</span>
+    <div class="boxForBackground">
+      <div class="background">
+        <div class="cardsInputBox">
+          <div class="cardsBox">
+            <!-- card 1 -->
+            <div class="cardsBox__card1">
+              <img
+                class="card1Image"
+                src="/images/bg-card-front.png"
+                alt="frontCard"
+              />
+              <div class="card1data">
+                <img src="/images/card-logo.svg" alt="" />
+                <p class="cardNumber">
+                  <span>0000</span><span>0000</span><span>0000</span
+                  ><span>0000</span>
                 </p>
-              </div>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="cardsBox__card2">
-            <img src="/images/bg-card-back.png" alt="backCard" />
-            <p class="card2data">000</p>
-          </div>
-        </div>
-        <!-- Form start -->
-        <div class="formBox">
-          <form>
-            <div class="inputField">
-              <label for="name">Cardholder Name</label>
-              <div class="boxForBorder">
-                <input
-                  class="nameInput"
-                  type="text"
-                  id="name"
-                  placeholder="e.g. Jane Appleseed"
-                />
-              </div>
-            </div>
-            <!-- ///// -->
-            <div class="inputField">
-              <label for="cardNumber">Card Number</label>
-              <div class="boxForBorder numberBorder">
-                <input
-                  class="cardNumberInput"
-                  type="text"
-                  id="cardNumber"
-                  placeholder="e.g. 1234 5678 9123 0000"
-                  maxlength="19"
-                />
-              </div>
-              <p class="errorMessage wrongNumber"></p>
-            </div>
-            <!-- ////// -->
-            <div class="inpFieldsBox">
-              <div class="inputField lastField">
-                <label for="MM"> Exp. Date (MM/YY)</label>
-                <div class="MMYYBox">
-                  <div class="boxForBorder monthBorder">
-                    <input
-                      class="expMonthInput"
-                      type="text"
-                      id="MM"
-                      placeholder="MM"
-                      maxlength="2"
-                    />
-                  </div>
-                  <div class="boxForBorder yearBorder">
-                    <input
-                      class="expYearInput"
-                      type="text"
-                      id="YY"
-                      placeholder="YY"
-                      maxlength="2"
-                    />
-                  </div>
+                <div class="box">
+                  <p class="name">Jane Appleseed</p>
+                  <p class="expDate">
+                    <span class="expM">00</span>/<span class="expY">00</span>
+                  </p>
                 </div>
-                <p class="errorMessage wrongExpDate"></p>
               </div>
-
-              <div class="inputField lastField">
-                <label for="CVC">CVC</label>
-                <div class="boxForBorder cvcBorder">
+            </div>
+            <!-- card 2 -->
+            <div class="cardsBox__card2">
+              <img
+                class="card2Image"
+                src="/images/bg-card-back.png"
+                alt="backCard"
+              />
+              <p class="card2data">000</p>
+            </div>
+          </div>
+          <!-- Form start -->
+          <div class="formBox">
+            <form>
+              <div class="inputField">
+                <label for="name">Cardholder Name</label>
+                <div class="boxForBorder">
                   <input
-                    class="cvcInput"
+                    class="nameInput"
                     type="text"
-                    id="CVC"
-                    placeholder="e.g. 123"
-                    maxlength="3"
+                    id="name"
+                    placeholder="e.g. Jane Appleseed"
                   />
                 </div>
-                <p class="errorMessage wrongCVC"></p>
               </div>
-            </div>
-            <button class="submitButton" type="submit">Confirm</button>
-          </form>
-          <!-- /////// -->
-          <div class="thanksBox">
-            <svg
-              width="80"
-              height="80"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="40" cy="40" r="40" fill="url(#a)" />
-              <path
-                d="M28 39.92 36.08 48l16-16"
-                stroke="#fff"
-                stroke-width="3"
-              />
-              <defs>
-                <linearGradient
-                  id="a"
-                  x1="-23.014"
-                  y1="11.507"
-                  x2="0"
-                  y2="91.507"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#6348FE" />
-                  <stop offset="1" stop-color="#610595" />
-                </linearGradient>
-              </defs>
-            </svg>
+              <!-- ///// -->
+              <div class="inputField">
+                <label for="cardNumber">Card Number</label>
+                <div class="boxForBorder numberBorder">
+                  <input
+                    class="cardNumberInput"
+                    type="text"
+                    id="cardNumber"
+                    placeholder="e.g. 1234 5678 9123 0000"
+                    maxlength="19"
+                  />
+                </div>
+                <p class="errorMessage wrongNumber"></p>
+              </div>
+              <!-- ////// -->
+              <div class="inpFieldsBox">
+                <div class="inputField lastField">
+                  <label for="MM"> Exp. Date (MM/YY)</label>
+                  <div class="MMYYBox">
+                    <div class="boxForBorder monthBorder">
+                      <input
+                        class="expMonthInput"
+                        type="text"
+                        id="MM"
+                        placeholder="MM"
+                        maxlength="2"
+                      />
+                    </div>
+                    <div class="boxForBorder yearBorder">
+                      <input
+                        class="expYearInput"
+                        type="text"
+                        id="YY"
+                        placeholder="YY"
+                        maxlength="2"
+                      />
+                    </div>
+                  </div>
+                  <p class="errorMessage wrongExpDate"></p>
+                </div>
 
-            <h2>Thank you!</h2>
-            <p>We've added your card details</p>
-            <button class="continueButton">Continue</button>
+                <div class="inputField lastField">
+                  <label for="CVC">CVC</label>
+                  <div class="boxForBorder cvcBorder">
+                    <input
+                      class="cvcInput"
+                      type="text"
+                      id="CVC"
+                      placeholder="e.g. 123"
+                      maxlength="3"
+                    />
+                  </div>
+                  <p class="errorMessage wrongCVC"></p>
+                </div>
+              </div>
+              <button class="submitButton" type="submit">Confirm</button>
+            </form>
+            <!-- /////// -->
+            <div class="thanksBox">
+              <svg
+                width="80"
+                height="80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="40" cy="40" r="40" fill="url(#a)" />
+                <path
+                  d="M28 39.92 36.08 48l16-16"
+                  stroke="#fff"
+                  stroke-width="3"
+                />
+                <defs>
+                  <linearGradient
+                    id="a"
+                    x1="-23.014"
+                    y1="11.507"
+                    x2="0"
+                    y2="91.507"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#6348FE" />
+                    <stop offset="1" stop-color="#610595" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <h2>Thank you!</h2>
+              <p>We've added your card details</p>
+              <button class="continueButton">Continue</button>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,26 @@
+.formBox {
+  form {
+    width: 327px;
+    .inputField {
+      margin-bottom: 20px;
+    }
+    .inpFieldsBox {
+      margin-bottom: 9px;
+      .MMYYBox {
+        width: 152px;
+        margin-right: 15px;
+        .boxForBorder {
+          input {
+            // background-color: green;
+            width: 71px;
+          }
+        }
+      }
+    }
+  }
+}
+.thanksBox {
+  button {
+    width: 327px;
+  }
+}

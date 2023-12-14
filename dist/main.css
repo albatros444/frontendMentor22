@@ -58,9 +58,6 @@ a {
 .cardsBox__card1 {
   position: absolute;
 }
-.cardsBox__card1 .card1Image {
-  border-radius: 10px;
-}
 .cardsBox__card1 .card1data {
   position: absolute;
   top: 0;
@@ -219,6 +216,105 @@ button {
   font-size: 12px;
   font-weight: 500;
   color: hsl(0, 100%, 66%);
+}
+
+@media screen and (max-width: 1100px) {
+  .boxForBackground {
+    display: flex;
+    justify-content: center;
+  }
+  .boxForBackground .background {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 375px;
+    align-items: start;
+    justify-content: center;
+    background: no-repeat url("/images/bg-main-mobile.png");
+    background-size: contain;
+  }
+  .boxForBackground .background .cardsInputBox {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .boxForBackground .cardsBox {
+    width: 343px;
+    height: 251px;
+    margin-top: 32px;
+    margin-bottom: 49px;
+  }
+  .boxForBackground .cardsBox__card1 {
+    left: 0;
+    bottom: 0;
+    width: 286px;
+    height: 157px;
+    z-index: 5;
+  }
+  .boxForBackground .cardsBox__card1 .card1Image {
+    width: 286px;
+  }
+  .boxForBackground .cardsBox__card1 .card1data {
+    width: 286px;
+    height: 157px;
+    padding: 18px;
+    padding-right: 20px;
+    padding-left: 21px;
+  }
+  .boxForBackground .cardsBox__card1 .card1data img {
+    width: 54px;
+    margin-bottom: 33px;
+  }
+  .boxForBackground .cardsBox__card1 .card1data .cardNumber {
+    font-size: 17px;
+  }
+  .boxForBackground .cardsBox__card1 .card1data .cardNumber span {
+    margin-right: 8px;
+  }
+  .boxForBackground .cardsBox__card1 .card1data .box p {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.07em;
+  }
+  .boxForBackground .cardsBox__card1 .card1data .box .expDate {
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+  }
+  .boxForBackground .cardsBox__card2 {
+    top: 0;
+    right: 0;
+    width: 286px;
+    height: 157px;
+  }
+  .boxForBackground .cardsBox__card2 .card2Image {
+    width: 286px;
+  }
+  .boxForBackground .cardsBox__card2 .card2data {
+    top: 70px;
+    left: 229px;
+    width: 286px;
+    height: 157px;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  .boxForBackground .formBox form {
+    width: 327px;
+  }
+  .boxForBackground .formBox form .inputField {
+    margin-bottom: 20px;
+  }
+  .boxForBackground .formBox form .inpFieldsBox {
+    margin-bottom: 9px;
+  }
+  .boxForBackground .formBox form .inpFieldsBox .MMYYBox {
+    width: 152px;
+    margin-right: 15px;
+  }
+  .boxForBackground .formBox form .inpFieldsBox .MMYYBox .boxForBorder input {
+    width: 71px;
+  }
+  .boxForBackground .thanksBox button {
+    width: 327px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
